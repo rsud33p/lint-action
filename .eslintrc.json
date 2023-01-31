@@ -1,0 +1,36 @@
+{
+    "root": true,
+    "parser": "@typescript-eslint/parser",
+    "extends": [
+        "@samuelmeuli/eslint-config",
+        "plugin:jsdoc/recommended"
+    ],
+    "env": {
+        "node": true,
+        "jest": true
+    },
+    "settings": {
+        "jsdoc": {
+            "mode": "typescript"
+        }
+    },
+    "rules": {
+        "no-await-in-loop": "off",
+        "no-unused-vars": [
+            "error",
+            {
+                "args": "none",
+                "varsIgnorePattern": "^_"
+            }
+        ],
+        "jsdoc/check-indentation": "error",
+        "jsdoc/check-syntax": "error",
+        "jsdoc/newline-after-description": [
+            "error",
+            "never"
+        ],
+        "jsdoc/require-description": "error",
+        "jsdoc/require-hyphen-before-param-description": "error",
+        "jsdoc/require-jsdoc": "off"
+    }
+}
